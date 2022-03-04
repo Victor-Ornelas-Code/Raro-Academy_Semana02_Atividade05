@@ -9,5 +9,6 @@
  * @returns somente os itens definidos.
  */
  export const compact = (items: unknown[]): unknown[] => {
-  return null;
+  const novoArray = items.filter(item => item != false && item != null || item === '0')
+  return novoArray;
 };
